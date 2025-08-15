@@ -1,0 +1,60 @@
+{
+  "nodes": {
+    "nixCats": {
+      "locked": {
+        "lastModified": 1755491370,
+        "narHash": "sha256-i1sI9zxcygXP7ExtjqEz06jAobk9FWiYgbeimwn5Owc=",
+        "owner": "BirdeeHub",
+        "repo": "nixCats-nvim",
+        "rev": "a526813d8026d7a2a8a40a5d89eb76cf89d63169",
+        "type": "github"
+      },
+      "original": {
+        "owner": "BirdeeHub",
+        "repo": "nixCats-nvim",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1755268003,
+        "narHash": "sha256-nNaeJjo861wFR0tjHDyCnHs1rbRtrMgxAKMoig9Sj/w=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "32f313e49e42f715491e1ea7b306a87c16fe0388",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixpkgs-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "plugins-telescope-recent-files": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1742845965,
+        "narHash": "sha256-OxapSvSDdXFYxuza3Vf5acWTNEHg2okvhBUQJMV3hOQ=",
+        "owner": "smartpde",
+        "repo": "telescope-recent-files",
+        "rev": "eb190c0baded1cbfa9d8767c817b054377683163",
+        "type": "github"
+      },
+      "original": {
+        "owner": "smartpde",
+        "repo": "telescope-recent-files",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "nixCats": "nixCats",
+        "nixpkgs": "nixpkgs",
+        "plugins-telescope-recent-files": "plugins-telescope-recent-files"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
