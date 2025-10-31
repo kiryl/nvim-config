@@ -291,6 +291,9 @@ require("nixCatsUtils.lazyCat").setup(nixCats.pawsible({ "allPlugins", "start", 
 					["ui-select"] = {
 						require("telescope.themes").get_dropdown(),
 					},
+					["recent_files"] = {
+						only_cwd = true,
+					},
 				},
 			})
 
