@@ -641,6 +641,7 @@ require("nixCatsUtils.lazyCat").setup(nixCats.pawsible({ "allPlugins", "start", 
 			local statusline = require("mini.statusline")
 			statusline.setup({ use_icons = vim.g.have_nerd_font })
 
+			---@diagnostic disable-next-line: duplicate-set-field
 			statusline.section_location = function()
 				return "%2l:%-2v"
 			end
@@ -701,6 +702,7 @@ require("nixCatsUtils.lazyCat").setup(nixCats.pawsible({ "allPlugins", "start", 
 			{ "<c-s>", mode = { "c" }, function() require("flash").toggle() end, desc = "Toggle Flash Search" },
 		},
 	},
+
 	{
 		"jackMort/ChatGPT.nvim",
 		event = "VeryLazy",
