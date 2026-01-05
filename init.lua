@@ -649,10 +649,12 @@ require("nixCatsUtils.lazyCat").setup(nixCats.pawsible({ "allPlugins", "start", 
 	},
 
 	{ -- Highlight, edit, and navigate code
-		"nvim-treesitter/nvim-treesitter",
-		build = require("nixCatsUtils").lazyAdd(":TSUpdate"),
-		main = "nvim-treesitter.configs", -- Sets main module to use for opts
-		-- [[ Configure Treesitter ]] See `:help nvim-treesitter`
+		"MeanderingProgrammer/treesitter-modules.nvim",
+		dependencies = {
+			"nvim-treesitter/nvim-treesitter",
+		},
+		---@module 'treesitter-modules'
+		---@type ts.mod.UserConfig
 		opts = {
 			ensure_installed = require("nixCatsUtils").lazyAdd({
 				"bash",

@@ -61,6 +61,7 @@
               kanagawa-nvim
               todo-comments-nvim
               mini-nvim
+              treesitter-modules-nvim
               nvim-treesitter.withAllGrammars
               indent-blankline-nvim
               comment-nvim
